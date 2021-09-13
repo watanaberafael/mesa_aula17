@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 150px;
+}
+
+.bola1 {
+animation: bola1 4s infinite alternate;
+}
+
+@keyframes bola1 {
+0%{
+    transform: translateX(0);
+    opacity: 0;
+}
+
+100%{
+    transform: translateX(50%);
+    opacity: 1;
+}
+}
+
+.bola2 {
+animation: bola2 2s infinite alternate;
+
+}
+
+@keyframes bola2 {
+from{ 
+  transform: rotate(0) scale(0);
+}
+to{
+  transform: rotate(360deg) scale(1);
+}
+
+}
+
+button{
+background: rgb(100, 160, 95);
+color: cornsilk;
+border: none;
+font-size: 1.5rem;
+margin: 40px;
+padding: 10px 15px;
+transition: background 0.5s ease-in-out;
+}
+
+button:hover{
+background: rgb(206, 61, 25);
+cursor: pointer;
+}
